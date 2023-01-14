@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# datasets
+datasets
+data
+
+# jupyter 
+
+.ipynb_checkpoints
+
