@@ -1,0 +1,33 @@
+{
+    "os": "macOS-13.1-arm64-arm-64bit",
+    "python": "3.9.7",
+    "heartbeatAt": "2023-01-20T16:52:30.038579",
+    "startedAt": "2023-01-20T16:52:29.411405",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "sound_classifier.ipynb",
+    "root": "/Users/fridadesigley/pico/tiny-ml",
+    "git": {
+        "remote": "git@github.com:wandb/tiny-ml.git",
+        "commit": "2a0ffed9fa7b5b9daab9069345b0368327f67fca"
+    },
+    "email": "fdesigley@gmail.com",
+    "host": "Frida-De-Sigley-FVFHK4EMQ05N.local",
+    "username": "fridadesigley",
+    "executable": "/Users/fridadesigley/.pyenv/versions/3.9.7/envs/pico/bin/python3.9",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 8.257427215576172
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
