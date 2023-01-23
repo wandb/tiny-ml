@@ -143,5 +143,5 @@ recovery
 .ipynb_checkpoints
 
 # data
-
+test_train_split.csv
 test.wav
