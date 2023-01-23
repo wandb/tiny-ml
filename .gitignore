@@ -138,6 +138,7 @@ processed
 recovery
 data/yes/*
 data/no/*
+!data/test_train_split.csv
 # jupyter 
 
 .ipynb_checkpoints
