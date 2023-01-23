@@ -1,3 +1,6 @@
 [submodule "ml-audio-classifier-example-for-pico"]
 	path = ml-audio-classifier-example-for-pico
 	url = https://github.com/fdsig/ml-audio-classifier-example-for-pico.git
+[submodule "microphone-library-for-pico"]
+	path = microphone-library-for-pico
+	url = https://github.com/ArmDeveloperEcosystem/microphone-library-for-pico.git

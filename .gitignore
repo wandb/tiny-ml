@@ -145,3 +145,6 @@ recovery
 # data
 test_train_split.csv
 test.wav
+
+# tensorflow io
+io 
