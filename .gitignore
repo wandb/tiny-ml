@@ -130,14 +130,14 @@ dmypy.json
 
 # datasets
 datasets
-data
+data/background/*
 ESC-50
 ESC-50
 wandb
 processed
 recovery
-
-
+data/yes/*
+data/no/*
 # jupyter 
 
 .ipynb_checkpoints
