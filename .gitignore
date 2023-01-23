@@ -138,7 +138,11 @@ processed
 recovery
 data/yes/*
 data/no/*
-!data/test_train_split.csv
+data/background/*
+!data/background/.gitkeep
+!data/yes/.gitkeep
+!data/no/.gitkeep
+
 # jupyter 
 
 .ipynb_checkpoints
