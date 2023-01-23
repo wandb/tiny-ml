@@ -132,10 +132,16 @@ dmypy.json
 datasets
 data
 ESC-50
+ESC-50
 wandb
+processed
+recovery
 
 
 # jupyter 
 
 .ipynb_checkpoints
 
+# data
+
+test.wav
