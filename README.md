@@ -61,4 +61,4 @@ here is and example following signal processing tha we are training on spectrogr
 
 here is a sound:
 
-![](https://user-images.githubusercontent.com/65113682/214316790-70ec5b06-4fc7-466d-a583-b78d1eeab430.mov)
+![here](https://user-images.githubusercontent.com/65113682/214316790-70ec5b06-4fc7-466d-a583-b78d1eeab430.mov)
