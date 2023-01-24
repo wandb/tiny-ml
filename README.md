@@ -1,4 +1,4 @@
-# Truely tiny-ml with WandB (Wake word detection) 🎙️
+# Truely TinyML with WandB (Wake word detection) 🎙️
 
 
 ## Here we will cover :
@@ -11,21 +11,15 @@
 
 ## WandB UI 🪄🐝:
 
-You can see how we use WandB  to track, understand and develop our wake word model here:
+You can see how we use WandB to track, understand and develop our wake word model:
 
-A WandB project can be found [here](https://wandb.ai/tiny-ml/wake_word_detection)
-
-And with  a corresponding report on our project.  
-
-[here](https://wandb.ai/tiny-ml/wake_word_detection/reports/True-TinyML-with-Weights-Biases-Wake-Word-Detection--VmlldzozMjk0MDMz)
+A WandB project can be found [here](https://wandb.ai/tiny-ml/wake_word_detection) along with a corresponding report on this project [here](https://wandb.ai/tiny-ml/wake_word_detection/reports/True-TinyML-with-Weights-Biases-Wake-Word-Detection--VmlldzozMjk0MDMz)
 
 ## Setup: 
 
 You'll be able to run the sound_classifier notebook locally, or in colab:
 
-You'll need to create a new venv
-clone this repository
-and inside your python virtual env run
+You'll need to create a new venv, clone this repository and inside your python virtual env run
 
 ```bash
 cd tiny-ml
