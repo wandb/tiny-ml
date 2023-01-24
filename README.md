@@ -23,7 +23,7 @@ And with  a corresponding report on our project.
 
 You'll be able to run the sound_classifier notebook locally, or in colab:
 
-You'll need to create a new venve
+You'll need to create a new venv
 clone this repository
 and inside your python virtual env run
 
@@ -47,11 +47,11 @@ you'll also need tfio which can be install with the following:
  python3 -m pip install --no-deps dist/tensorflow_io-0.30.0-cp310-cp310-macosx_12_0_arm64.whl
 ```
 
-note the .whl file may change and and your bash command should also 
+Note the .whl file may change and and your bash command should also 
 
 We also recommend using pyenv or some other virtual environment manager to manage your python environment. 
 
-here is and example following signal processing tha we are training on spectrogram because we are all about expandability and this is the raw data type that out model performs inference on in the wild: 
+Here is an example following signal processing that we are training on spectrogram because we are all about expandability and this is the raw data type that out model performs inference on in the wild: 
 
 ![](img.jpg)
 
