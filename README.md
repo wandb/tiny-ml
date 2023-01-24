@@ -56,5 +56,5 @@ here is and example following signal processing tha we are training on spectrogr
 ![](img.jpg)
 
 here is a sound:
-
+/Users/fridadesigley/pico/tiny-ml/yes_record 105.mov
 ![](yes_record%20105.mov)
