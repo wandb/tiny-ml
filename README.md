@@ -57,4 +57,4 @@ here is and example following signal processing tha we are training on spectrogr
 
 here is a sound:
 
-![](test.wav)
+![](yes_record%20105.mov)
