@@ -53,8 +53,12 @@ We also recommend using pyenv or some other virtual environment manager to manag
 
 here is and example following signal processing tha we are training on spectrogram because we are all about explainability and this is the raw data type that out model performs inference on in the wild: 
 
+
+
+
+
 ![](img.jpg)
 
 here is a sound:
-/Users/fridadesigley/pico/tiny-ml/yes_record 105.mov
-![](yes_record%20105.mov)
+
+![](https://user-images.githubusercontent.com/65113682/214316790-70ec5b06-4fc7-466d-a583-b78d1eeab430.mov)
