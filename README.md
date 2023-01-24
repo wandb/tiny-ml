@@ -21,7 +21,7 @@ And with  a corresponding report on our project.
 
 ## Setup: 
 
-You'll be able to run the sound_classifier notebook locally, or in collab:
+You'll be able to run the sound_classifier notebook locally, or in colab:
 
 You'll need to create a new venve
 clone this repository
@@ -51,18 +51,7 @@ note the .whl file may change and and your bash command should also
 
 We also recommend using pyenv or some other virtual environment manager to manage your python environment. 
 
-here is and example following signal processing tha we are training on spectrogram because we are all about explainability and this is the raw data type that out model performs inference on in the wild: 
-
-
-
-
+here is and example following signal processing tha we are training on spectrogram because we are all about expandability and this is the raw data type that out model performs inference on in the wild: 
 
 ![](img.jpg)
-
-here is a sound:
-
-
-https://user-images.githubusercontent.com/65113682/214317169-908e438d-cf20-40ae-a51c-427f700f0045.mov
-
-
 
