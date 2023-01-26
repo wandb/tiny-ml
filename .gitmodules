@@ -4,3 +4,6 @@
 [submodule "microphone-library-for-pico"]
 	path = microphone-library-for-pico
 	url = https://github.com/ArmDeveloperEcosystem/microphone-library-for-pico.git
+[submodule "yesno_voice_recognition"]
+	path = yesno_voice_recognition
+	url = https://github.com/PerceptiLabs/yesno_voice_recognition
