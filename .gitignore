@@ -150,6 +150,10 @@ data/background/*
 # data
 test_train_split.csv
 test.wav
+artifacts
+training_1
+checkpoints
+
 
 # tensorflow io
 io 
