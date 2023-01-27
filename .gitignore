@@ -152,8 +152,11 @@ test_train_split.csv
 test.wav
 artifacts
 training_1
+<<<<<<< HEAD
 training_2
 
+=======
+>>>>>>> 02c6b065f1701401039131b9e9f01555df4783e4
 checkpoints
 
 
