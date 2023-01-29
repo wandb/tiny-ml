@@ -1,6 +1,5 @@
+
 from keras import backend as K
-
-
 def recall_(y_true, y_pred):
     "to calculate recall batch wise"
     true_positives = K.sum(K.round(K.clip(y_true * y_pred, 0, 1)))
