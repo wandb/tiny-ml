@@ -40,9 +40,9 @@ ipython
 ipython-genutils
 ipywidgets
 iso8601==1.1.0
-isoduration==20.11.0
-jax==0.4.1
-jaxlib==0.4.1
+isoduration
+jax
+jaxlib
 jedi==0.18.2
 Jinja2==2.11.3
 jsonpointer==2.3
