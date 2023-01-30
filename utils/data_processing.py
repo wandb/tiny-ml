@@ -7,7 +7,7 @@ import numpy as np
 import cmsisdsp
 from numpy import pi as PI
 import tensorflow as tf
-import cv2
+
 
 def augmenter(audio,sample_rate):
     from audiomentations import (
@@ -27,6 +27,7 @@ def augmenter(audio,sample_rate):
     return augment(samples=audio, sample_rate=sample_rate).astype(np.int16)[:44100]
 
 def plot_spectrogram(spectrogram,sample_rate, vmax=None):
+    import cv2
     '''a func to computer spect and save as a png then read as np.array'''
     plt.ioff()
     transposed_spectrogram = tf.transpose(spectrogram)
