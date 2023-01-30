@@ -128,8 +128,6 @@ tensorboard==2.11.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow-estimator==2.11.0
-tensorflow-io-gcs-filesystem @ file:///Users/fridadesigley/pico/io/dist/tensorflow_io_gcs_filesystem-0.29.0-cp39-cp39-macosx_12_0_arm64.whl
-tensorflow-macos==2.11.0
 termcolor==2.1.1
 terminado==0.17.1
 tinycss2==1.2.1
