@@ -4,11 +4,8 @@ from tensorflow.keras.optimizers import Adam, Adamax, Nadam
 import wandb
 import tensorflow as tf
 import numpy as np
-from utils.create_sweep import create_sweep
-import multiprocessing as mp
 
-def sub_sweep(swp_id):
-    def pre_train(config = None):
+def pre_train(config = None):
 
         run = wandb.init(config=config)
 
@@ -22,20 +19,16 @@ def sub_sweep(swp_id):
         BETA_2 = run.config.beta_2
         EPSILON = run.config.epsilon
 
-        with np.load('processed/train.npz',allow_pickle=True) as data:
-            train_x = data['x_data'].astype(np.float32)
-            train_y = data['y_data'].astype(np.uint8)
-        with np.load('processed/train_aug.npz',allow_pickle=True) as data:
-            aug_x = data['x_data'].astype(np.float32)
-            aug_y = data['y_data'].astype(np.uint8)
-        with np.load('processed/val.npz',allow_pickle=True) as data:
+        artifact = run.use_artifact('tiny-ml/wake_word_detection/npz-esc-50-files:v0', type='pre_processed_sound_data')
+        artifact_dir = artifact.download()
+        with np.load('./artifacts/npz-esc-50-files:v0/train.npz',allow_pickle=True) as data:
+            train_x = data['x_data'].astype(np.float32)[:2000]
+            train_y = data['y_data'].astype(np.uint8)[:2000]
+        with np.load('./artifacts/npz-esc-50-files:v0/val.npz',allow_pickle=True) as data:
             val_x = data['x_data'].astype(np.float32)
             val_y = data['y_data'].astype(np.uint8)
 
         train_dataset = tf.data.Dataset.from_tensor_slices((tf.cast(train_x, tf.float32), train_y))
-        train_aug_dataset = tf.data.Dataset.from_tensor_slices((tf.cast(aug_x, tf.float32), aug_y))
-        train_dataset = train_dataset.concatenate(train_aug_dataset)
-
         val_dataset = tf.data.Dataset.from_tensor_slices((tf.cast(val_x, tf.float32),val_y))
 
         train_ds = train_dataset.cache().shuffle(1000, seed=42).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
@@ -107,16 +100,3 @@ def sub_sweep(swp_id):
             validation_data=val_ds
         )
         run.finish()
-    wandb.agent(swp_id, function=pre_train,count=10)
-
-def main():
-    entity, project = 'tiny-ml', 'wake_word_detection'
-    n_processes = 4
-    sweep = create_sweep(**{'project':project,'entity':entity})
-    sweep_id = [sweep for p in range(n_processes)]
-    wandb.setup()
-    pool = mp.Pool(processes= n_processes)
-    pool.map(sub_sweep,sweep_id)
-if __name__ == "__main__":
-    main()
-    
