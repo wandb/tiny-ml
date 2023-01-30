@@ -213,9 +213,7 @@ nbclient==0.7.2
 nbconvert==7.2.8
 nbformat==5.7.3
 nest-asyncio==1.5.6
-networkx==3.0
-notebook==6.5.2
-notebook_shim==0.2.2
+networkx=
 numba==0.56.4
 numpy==1.23.5
 oauthlib==3.2.2
@@ -228,9 +226,8 @@ parso==0.8.3
 pathtools==0.1.2
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==9.4.0
 platformdirs==2.6.2
-plotly==5.13.0
+plotly
 pooch==1.6.0
 prometheus-client==0.15.0
 prompt-toolkit==3.0.36
