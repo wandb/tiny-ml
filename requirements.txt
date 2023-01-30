@@ -27,7 +27,6 @@ fastjsonschema==2.16.2
 flatbuffers==22.12.6
 fonttools==4.38.0
 fqdn==1.5.1
-future==0.18.2
 gast==0.4.0
 google-auth==2.15.0
 google-auth-oauthlib==0.4.6
