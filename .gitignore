@@ -132,7 +132,7 @@ dmypy.json
 datasets
 data/background/*
 ESC-50
-ESC-50
+ESC-50-master
 wandb
 processed
 recovery
@@ -154,6 +154,11 @@ artifacts
 training_1
 training_2
 checkpoints
+slides
+tiny-ml
+checkpoints
+test.wav
+wandb_bg.png
 
 # tensorflow io
 io
