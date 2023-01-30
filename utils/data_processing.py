@@ -7,10 +7,13 @@ import numpy as np
 import cmsisdsp
 from numpy import pi as PI
 import tensorflow as tf
-from audiomentations import Compose, AddGaussianNoise, TimeStretch, PitchShift, Shift,RoomSimulator,ClippingDistortion,AddBackgroundNoise
 import cv2
 
 def augmenter(audio,sample_rate):
+    from audiomentations import (
+        Compose, AddGaussianNoise, TimeStretch, 
+        PitchShift, Shift,RoomSimulator,
+        ClippingDistortion,AddBackgroundNoise)
     audio = np.array([audio]).astype(np.float32)[0]
     augment = Compose([
     AddGaussianNoise(min_amplitude=0.001, max_amplitude=0.015, p=0.1),
