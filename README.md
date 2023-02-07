@@ -32,7 +32,7 @@ pip install -r requirements.txt
 pip install tensorflow-metal
 ```
 
-you'll also need tfio which can be install with the following:
+Depending on your use case you might also need tfio which can be install with the following:
 
 ```
  git clone https://github.com/tensorflow/io.git
