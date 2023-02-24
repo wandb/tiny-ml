@@ -1,6 +1,4 @@
 import wandb
-
-
 def create_sweep(**kwargs):
     sweep_config = {"method": "random"}
     parameters_dict = {
